@@ -1,0 +1,1 @@
+export const settings = { host: "https://backend-demo-rt6l.onrender.com"};
