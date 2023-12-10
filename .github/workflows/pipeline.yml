@@ -23,5 +23,13 @@ jobs:
     - name: Install playwright
       run: npx playwright install
     - name: Start backend
-      run: npm run start-be
+      run: npm run start-be &
+    - name: Wait 5 seconds
+      run: sleep 5
+    - name: Start frontend
+      run: npm run start-fe &
+    - name: Wait 5 seconds
+      run: sleep 5
+    - name: Start Integration Tests
+      run: npm run test
    
